@@ -17,7 +17,7 @@ data "vault_azure_access_credentials" "creds" {
   backend                     = var.vault_azure_secret_backend_path
   role                        = var.vault_azure_secret_backend_role
   validate_creds              = true
-  num_sequential_successes    = 24
+  num_sequential_successes    = 48
   num_seconds_between_tests   = 7
   max_cred_validation_seconds = 1200 // 20 minutes
 }
